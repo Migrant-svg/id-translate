@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор ID-карты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.4.0/build/index.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор ID-карты</h1>
+                <form id="id-form">
+            
+            <div class="form-group">
+                <label>Фамилия:</label>
+                <input type="text" id="surname" placeholder="Введите фамилию" required>
+            </div>
+
+            <div class="form-group">
+                <label>Имя:</label>
+                <input type="text" id="name" placeholder="Введите имя" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label>Отчество:</label>
+                <input type="text" id="patronymic" placeholder="Введите отчество">
+            </div>
+            <div class="form-group">
+                <label>Место рождения:</label>
+                <input type="text" id="birthPlace" placeholder="Введите место рождение">
+            </div>
+          <div class="form-group">
+                <label>Дата рождения:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label>Дата выдачи:</label>
+                <input type="date" id="issueDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Срок действия:</label>
+                <input type="date" id="expiryDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Орган выдачи:</label>
+                <input type="text" id="issuingAuthority" placeholder="Введите орган выдачи ">
+            </div>
+
+            <div class="form-group">
+                <label>Персональный номер:</label>
+                <input type="text" id="personalNumber" placeholder="Введите персональный номер " required>
+            </div>
+
+            <div class="form-group">
+                <label>Номер документа:</label>
+                <input type="text" id="docNumber" placeholder="Введите номер документа " required>
+            </div>
+
+            <div class="form-group">
+                <label>Фото владельца:</label>
+                <select id="Photooftheowner">
+                    <option value="Фото владельца">Фото владельца</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Подпись:</label>
+                <select id="Signature">
+                    <option value="Подпись имеется">Подпись имеется</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Место проживания :</label>
+                <input type="text" id="PlaceofResidence" placeholder="Введите место проживания " required>
+            </div>
+
+            <div class="form-group">
+                <label>Категории:</label>
+                <input type="text" id="CategoriesABC" placeholder="Категории " required>
+            </div>
+
+            <div class="form-group">
+                <label>номер-DL</label>
+                <input type="text" id="numberDL" placeholder="DL" required>
+            </div>
+
+            <div class="form-group">
+                <label>Категории :</label>
+                <select id="Categories" class="small-select">
+                <option value="A">A</option>
+                </select>
+                <input type="date" id="CategoryIssueDate" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriod" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+                
+                <select id="CategoryB" class="small-select">
+                    
+                    <option value="B">B</option>
+                </select>
+                <input type="date" id="CategoryIssueDateB" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodB" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+                
+                <select id="CategoryC" class="small-select">
+                    
+                    <option value="C">C</option>
+                </select>
+                <input type="date" id="CategoryIssueDateC" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodC" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+                
+                <select id="CategoryD" class="small-select">
+                    
+                    <option value="D">D</option>
+                </select>
+                <input type="date" id="CategoryIssueDateD" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodD" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+              
+                <select id="CategoryBE" class="small-select">
+                    
+                    <option value="BE">BE</option>
+                </select>
+                <input type="date" id="CategoryIssueDateBE" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodBE" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+                
+                <select id="CategoryCE" class="small-select">
+                    
+                    <option value="CE">CE</option>
+                </select>
+                <input type="date" id="CategoryIssueDateCE" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodCE" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+               
+                <select id="CategoryDE" class="small-select">
+                    
+                    <option value="DE">DE</option>
+                </select>
+                <input type="date" id="CategoryIssueDateDE" class="small-input" required>
+                <input type="date" id="CategoryValidityPeriodDE" class="small-input" required>
+            </div>
+
+            <div class="form-group">
+                <label>Дополнительные сведения по каждой категории</label>
+                <input type="text" id="Additionalinformationforeachcategory" placeholder="Укажите отметки" required>
+            </div>
+
+            <div class="form-group">
+                <label>Для особых отметок</label>
+                <input type="text" id="ForSpecialNotes" placeholder="Укажите отметки" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Переводчик:</label>
+                <input type="text" id="translator" placeholder="Переводчик" required>
+            </div>
+            <button type="button" onclick="generateWord()">Скачать Word</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
